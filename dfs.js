@@ -15,6 +15,7 @@ const breadthFirstSearchPrint = (graph, source) => {
 
 const graph = {
   // adjacency list
+  // hash map
   a: ["b", "c"],
   b: ["d"],
   c: ["e"],
