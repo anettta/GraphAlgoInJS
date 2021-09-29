@@ -7,19 +7,20 @@
 // Space: O(n)
 
 // Depth first traversal
+// recursively
+const hasPath = (graph, src, dst) => {
+  if (src === dst) return true;
+  // key into my adjacency list
+  for (let neighbor of graph[src]) {
+    // boolean type
+    if (hasPath(graph, neighbor, dst) === true) {
+      console.log("true");
+    }
+  }
+  console.log("false");
+};
 
-// const hasPath = (graph, src, dst) => {
-//   if (src === dst) return true;
-
-//   for (let neighbor of graph[src]) {
-//     if (hasPath(graph, neighbor, dst) === true) {
-//       console.log("true");
-//     }
-//   }
-//   console.log("false");
-// };
-
-// breadth first traversal
+// Breadth first traversal
 const hasPath = (graph, src, dst) => {
   const queue = [src];
 
