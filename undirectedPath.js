@@ -1,4 +1,4 @@
-// Part 2: traversal and guarding against infinity loops
+// Part 2: traversal and guarding against infinity loops (creating a set and a parameter visited )
 
 const undirecredPath = (edges, nodeA, nodeB) => {
   const graph = buildGraph(edges);
