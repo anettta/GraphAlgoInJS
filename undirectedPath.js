@@ -1,3 +1,5 @@
+// Part 2: traversal and guarding against infinity loops
+
 const undirecredPath = (edges, nodeA, nodeB) => {
   const graph = buildGraph(edges);
   return hasPath(graph, nodeA, nodeB, new Set());
@@ -15,6 +17,8 @@ const hasPath = (graph, src, dst, visited) => {
   }
   return false;
 };
+
+// Part 1 : converting an edge list to an adjacency list
 
 const buildGraph = (edges) => {
   const graph = {};
