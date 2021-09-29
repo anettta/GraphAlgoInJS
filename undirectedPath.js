@@ -41,6 +41,6 @@ const edges = [
   ["o", "n"],
 ];
 
-console.log(undirecredPath(edges, "i", "n"));
+// console.log(undirecredPath(edges, "i", "n"));
 
-console.log(buildGraph(edges));
+// console.log(buildGraph(edges));
