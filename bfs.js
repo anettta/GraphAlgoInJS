@@ -1,4 +1,5 @@
 // iteratively
+// a, b, c, ...
 
 const breadthFirstSearchPrint = (graph, source) => {
   const queue = [source];
