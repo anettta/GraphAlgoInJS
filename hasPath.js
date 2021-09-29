@@ -10,7 +10,7 @@
 // recursively
 const hasPath = (graph, src, dst) => {
   if (src === dst) return true;
-  // key into my adjacency list
+  // key into my adjacency list graph[src]
   for (let neighbor of graph[src]) {
     // boolean type
     if (hasPath(graph, neighbor, dst) === true) {
