@@ -17,7 +17,7 @@ const connectedComponentsCount = (graph) => {
   return count;
 };
 
-const explore = (graph, current) => {
+const explore = (graph, current, visited) => {
   // checks
   // JS automatically converts keys into strings
   if (visited.has(String(current))) return false;
