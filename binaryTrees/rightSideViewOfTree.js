@@ -10,7 +10,7 @@
 // RLN Postorder: [6,3,5,8,7,4,2,1]
 
 // Time: O(n)
-// Space: O(n)
+// Space: O(w) width of the tree
 const rightSideViewOfTree = function (root) {
   // pass in global array as a function
   // using the same array
