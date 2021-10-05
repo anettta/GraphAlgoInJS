@@ -70,3 +70,28 @@ const depthFirstRecursive = (root) => {
   console.log(root.val);
   depthFirstRecursive(root.right);
 };
+
+// exercise
+// iteratively
+const sumTree = (root) => {
+  const stack = [root];
+  let sum = 0;
+  while (stack.length > 0) {
+    const current = stack.pop();
+    sum += current.val;
+    // add current's children to the top of the stack
+    if (current.right !== null) {
+      stack.push(current.right);
+    }
+
+    if (current.left !== null) {
+      stack.push(current.left);
+    }
+  }
+  return sum;
+};
+// recursively
+const sumTree = (root) => {
+  if (root === null) return 0;
+  return sumTree(root.left) + root.val + sumTree(root.right);
+};
