@@ -27,3 +27,22 @@ const breadthFirst = (root) => {
     }
   }
 };
+
+// exercise
+const breadthFirst = (root, target) => {
+  let queue = [root];
+  while (root !== null) {
+    let current = queue.shift();
+
+    if (current.val === target) {
+      return true;
+    }
+    if (current.left !== null) {
+      queue.push(current.left);
+    }
+    if (current.right !== null) {
+      queue.push(current.right);
+    }
+  }
+  return false;
+};
