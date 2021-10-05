@@ -43,7 +43,7 @@ const countConstruct = (target, wordBank, memo = {}) => {
 // Time: O(n*m^2)
 // Space: O(m^2)
 
-console.log(canConstruct("abcdef", ["ab", "abc", "cd", "def", "abcd"])); // true
+console.log(countConstruct("abcdef", ["ab", "abc", "cd", "def", "abcd"])); // true
 console.log(
-  canConstruct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"])
+  countConstruct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"])
 ); // false
