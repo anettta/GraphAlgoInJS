@@ -46,3 +46,23 @@ const breadthFirst = (root, target) => {
   }
   return false;
 };
+
+// another exercise
+const breadthFirst = (root) => {
+  let queue = [root];
+  const sum = 0;
+  while (root !== null) {
+    let current = queue.shift();
+    sum += current.val;
+    if (current.left !== null) {
+      queue.push(current.left);
+    }
+    if (current.right !== null) {
+      queue.push(current.right);
+    }
+  }
+  return sum;
+};
+
+// Time: O(n)
+// Space: O(n)
