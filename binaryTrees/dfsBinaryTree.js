@@ -95,3 +95,6 @@ const sumTree = (root) => {
   if (root === null) return 0;
   return sumTree(root.left) + root.val + sumTree(root.right);
 };
+
+// Time: O(n)
+// Space: O(n)
