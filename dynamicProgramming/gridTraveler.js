@@ -5,6 +5,8 @@
 // gridTraveler(0,0) ---> 0 unique way
 
 // gridTraveler(3,3) --->
+// Time O(2^n+m)
+// Space O(n+m)
 const gridTraveler = (m, n, memo = {}) => {
   const key = m + "," + n;
   if (key in memo) return memo[key];
@@ -13,5 +15,5 @@ const gridTraveler = (m, n, memo = {}) => {
   memo[key] = gridTraveler(m - 1, n, memo) + gridTraveler(m, n - 1, memo);
   return memo[key];
 };
-// Time O(2^n+m)
+// Time O(n*m)
 // Space O(n+m)
