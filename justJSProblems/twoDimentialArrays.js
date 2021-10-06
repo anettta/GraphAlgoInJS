@@ -2,6 +2,8 @@
 // a 2-dimensional array of height `m` and width `n` that contains the `value` as every element.
 
 let makeMatrix = function (m, n, value) {
+  //  m rows
+  // n number of values inside a row
   let matrix = [];
   for (let i = 0; i < m; i++) {
     let row = [];
